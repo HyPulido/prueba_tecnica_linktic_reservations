@@ -18,8 +18,8 @@ Asegúrate de tener instalados los siguientes requisitos antes de comenzar:
 1. Clona este repositorio:
 
     ```bash
-    git clone https://github.com/usuario/proyecto.git
-    cd proyecto
+    git clone https://github.com/HyPulido/prueba_tecnica_linktic.git
+    cd linktic-backend
     ```
 
 2. Instala las dependencias:
