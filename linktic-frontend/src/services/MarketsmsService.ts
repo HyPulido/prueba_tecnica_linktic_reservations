@@ -7,9 +7,7 @@ import { AuthPostModel, LogoutModel } from "../models/Auth"
 import { getBaseToken, getToken, userLogout } from "../Utils/Auth"
 import { OrdersGetModel, OrdersPostModel } from "../models/Orders"
 
-// const API = env('MARKETSMS_ENDPOINT')
-const API ='http://127.0.0.1:8000/api/v1/';
-const API_WEB = 'https://domilapp.marketsms.co/api/v1/';
+const API = env('MARKETSMS_ENDPOINT')
 
 const getHeadersAuth = (content_type?: string) => {
     const headers = {
@@ -72,29 +70,6 @@ export const signUp = async (body: Object) => {
         }
     }
 }
-
-// Dashboard
-// export const getTraficMessagesByUser = async (range: string): Promise<TrafficGetModel> => {
-//     try {
-//         var response = await axios.get(API + 'message/trafic/' + range + "/user", { headers: getHeadersAuth() })
-//         return response.data[0];
-
-//     } catch (error: any) {
-//         return processErrorResponse(error)
-//     }
-// }
-
-// export const getTraficMessagesByAccount = async (range: string): Promise<TrafficGetModel> => {
-//     try {
-//         const headers = await getHeadersAuth('multipart/form-data');
-//         const account_id = await getCurrentAccountId();
-//         var response = await axios.get(API_WEB + 'message/trafic/' + range + "/account?account_id=" + account_id, { headers: headers })
-//         return response.data[0];
-
-//     } catch (error: any) {
-//         return processErrorResponse(error)
-//     }
-// }
 
 function processErrorResponse(error: any) {
     if (error.response && (error.response.status === 400 || error.response.status === 401 || error.response.status === 500)) {
@@ -164,9 +139,6 @@ export const verificationCode = async (body: Object) => {
         }
     }
 }
-
-
-
 
 // Linktic
 export const getProducts = async (): Promise<ProductsGetModel> => {
