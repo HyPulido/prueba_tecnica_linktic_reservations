@@ -1,0 +1,391 @@
+// Here you can add other styles
+.content {
+  height: 100vh;
+  /* Altura del 100% de la ventana */
+  overflow-y: scroll;
+  /* Muestra la barra de desplazamiento solo cuando sea necesario */
+  /* Agrega estilos personalizados para la barra de desplazamiento si lo deseas */
+  scrollbar-width: thin;
+  /* Anchura del scroll */
+  scrollbar-color: #999999 #f0f0f0;
+  /* Color de la barra y del fondo */
+}
+
+/* Estilos para la barra de desplazamiento en Firefox */
+.content::-webkit-scrollbar {
+  width: 0px;
+}
+
+.content::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.content::-webkit-scrollbar-thumb {
+  background-color: #999999;
+}
+
+.sidebar-brand {
+  // background: red !important;
+  background:
+    #eaeaea !important;
+}
+
+
+
+// Personalizar color de botones y paginación
+.btn-primary {
+  background-color: black !important;
+  color: white;
+  font-weight: 600 !important;
+
+  &:hover {
+    background-color: white !important;
+    color: black !important;
+    // font-weight: bold;
+  }
+}
+
+span.page-link {
+  color: white !important;
+  background-color: black !important;
+  border-color: black !important;
+}
+
+
+a.page-link {
+  color: black !important;
+}
+
+.page-link {
+  cursor: pointer;
+}
+
+.ctm-close {
+  cursor: pointer;
+
+  &:hover {
+    color: red;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hover-card {
+  &:hover {
+    background-color: rgb(240, 240, 240);
+  }
+}
+
+.btn-close {
+  font-size: 12px !important;
+}
+
+.modal-header {
+  border: 0 !important;
+}
+
+.modal-footer {
+  border: 0 !important;
+}
+
+.modal-open {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.13);
+  z-index: 998;
+}
+
+.confirm-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.loading-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.fs-7 {
+  font-size: 0.9rem !important;
+}
+
+
+.fs-8 {
+  font-size: 0.8rem !important;
+}
+
+
+.fs-9 {
+  font-size: 0.7rem !important;
+}
+
+
+.fs-10 {
+  font-size: 0.6rem !important;
+}
+
+.bg-whatsapp-header-light {
+  background: #075E55;
+}
+
+.bg-whatsapp-container-icons {
+  background: #24CC63;
+}
+
+.bg-orange {
+  background: #ff5e00 !important;
+}
+
+.ms-6 {
+  margin-right: 4rem !important;
+}
+
+.ms-7 {
+  margin-right: 5rem !important;
+}
+
+.ms-8 {
+  margin-right: 6rem !important;
+}
+
+.ms-9 {
+  margin-right: 7rem !important;
+}
+
+.ms-10 {
+  margin-right: 8rem !important;
+}
+
+.mt-6 {
+  margin-right: 4rem !important;
+}
+
+.mt-7 {
+  margin-right: 5rem !important;
+}
+
+.mt-8 {
+  margin-right: 6rem !important;
+}
+
+.mt-9 {
+  margin-right: 7rem !important;
+}
+
+.mt-10 {
+  margin-right: 8rem !important;
+}
+
+.me-6 {
+  margin-right: 4rem !important;
+}
+
+.me-7 {
+  margin-right: 5rem !important;
+}
+
+.me-8 {
+  margin-right: 6rem !important;
+}
+
+.me-9 {
+  margin-right: 7rem !important;
+}
+
+.me-10 {
+  margin-right: 8rem !important;
+}
+
+.mb-6 {
+  margin-right: 4rem !important;
+}
+
+.mb-7 {
+  margin-right: 5rem !important;
+}
+
+.mb-8 {
+  margin-right: 6rem !important;
+}
+
+.mb-9 {
+  margin-right: 7rem !important;
+}
+
+.mb-10 {
+  margin-right: 8rem !important;
+}
+
+.bg-gray {
+  background-color: #F0F2F5 !important;
+}
+
+.text-gray {
+  color: #6d6d6d !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.bg-bluelight {
+  background-color: #eafbff !important;
+}
+
+.bg-darkgreen {
+  background-color: #50C878;
+}
+
+.bg-darkred {
+  background-color: #9f0000;
+}
+
+.bg-bluestel {
+  background-color: #4682B4;
+}
+
+.bg-orange {
+  background-color: #FFA500;
+}
+
+.bg-yellowlight {
+  background-color: #5c0057;
+}
+
+.vh-95 {
+  height: 95vh !important;
+}
+
+.vh-90 {
+  height: 90vh !important;
+}
+
+.vh-85 {
+  height: 85vh !important;
+}
+
+.vh-84 {
+  height: 84vh !important;
+}
+
+.vh-82 {
+  height: 82vh !important;
+}
+
+.vh-80 {
+  height: 80vh !important;
+}
+
+.vh-60 {
+  height: 60vh !important;
+}
+
+.custom-overflow-y {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.popover-body {
+  padding: 0px !important;
+  // width: 150px !important;
+}
+
+.vw-100 {
+  width: 100vh !important;
+}
+
+.vw-99 {
+  width: 99vh !important;
+}
+
+.vw-98 {
+  width: 98vh !important;
+}
+
+.vw-97 {
+  width: 97vh !important;
+}
+
+.vw-96 {
+  width: 96vh !important;
+}
+
+.vw-95 {
+  width: 95vh !important;
+}
+
+.vw-90 {
+  width: 90vh !important;
+}
+
+.vw-85 {
+  width: 85vh !important;
+}
+
+.vw-84 {
+  width: 84vh !important;
+}
+
+.vw-82 {
+  width: 82vh !important;
+}
+
+.vw-80 {
+  width: 80vh !important;
+}
+
+.vw-60 {
+  width: 60vh !important;
+}
+
+.single-line {
+  white-space: nowrap;
+  /* Evita que el texto se divida en varias líneas */
+  overflow: hidden;
+  /* Oculta el texto que se desborda del contenedor */
+  text-overflow: ellipsis;
+  /* Añade los tres puntos al final del texto que no cabe */
+  width: 200px;
+  /* Establece un ancho fijo para el contenedor */
+}
+
+.bg-brand-primary {
+  background-color: #08B2FF !important;
+}
+
+.text-brand-primary {
+  color: #08B2FF !important;
+}
+
+// Imagen dentro de loading
+.spinner-with-image {
+  position: relative;
+  display: inline-block;
+}
+
+.spinner-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // width: 16px;
+  // height: 16px;
+}

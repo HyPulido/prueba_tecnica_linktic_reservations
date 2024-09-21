@@ -1,0 +1,62 @@
+{
+  "BAD_REQUEST": {
+    "en": "Ha ocurrido un error, intentalo de nueva o contacta con soporte.",
+    "es": "An error has occurred, try again or contact support"
+  },
+  "BAD_REQUEST_EXIST_EMAIL": {
+    "en": "The email already exists.",
+    "es": "El correo electrónico ya existe."
+  },
+  "BAD_REQUEST_EXIST_PHONE": {
+    "en": "Phone number already exist",
+    "es": "El número de teléfono ya existe."
+  },
+  "SUCCESS": {
+    "en": "Proccess executed successfully.",
+    "es": "Proceso ejecutado satisfactoriamente."
+  },
+  "UNAUTHORIZED": {
+    "en": "Error, email or password incorrect.",
+    "es": "Error, correo electrónico o contraseña incorrecta."
+  },
+  "SYSTEM_ERROR": {
+    "en": "System error, We are working on solving the problem.",
+    "es": "Error del sistema, Estamos trabajando en solucionar el problema."
+  },
+  "BAD_REQUEST_INSUFFICIENT_BALANCE": {
+    "en": "Does not have enough balance.",
+    "es": "No tienes saldo suficiente para enviar el mensaje, recarga tu cuenta y vuelve a intentarlo."
+  },
+  "ERROR_USER_EMPTY_CONTACT_FOR_DELETE": {
+    "en": "Does not have selected contact for delete of group.",
+    "es": "No tienes un contacto seleccionado para eliminar del grupo."
+  },
+  "ERROR_USER_EMPTY_LIST_CONTACT_FOR_ADD": {
+    "en": "You must select a contact list to add to the group.",
+    "es": "Debes seleccionar un listado de contactos para agregar al grupo."
+  },
+  "BAD_REQUEST_EMPTY_FIELDS": {
+    "en": "Empty fields found.",
+    "es": "Se encotraron variables requeridas vacias."
+  },
+  "BAD_REQUEST_VERIFICATION_CODE_EXPIRED": {
+    "en": "verification code expired",
+    "es": "El código de verificación expiro"
+  },
+  "BAD_REQUEST_VERIFICATION_CODE_INVALID": {
+    "en": "verification code invalid",
+    "es": "El código de verificación es invalido"
+  },
+  "BAD_REQUEST_INVALID_FILE": {
+    "en": "file invalid",
+    "es": "El archivo proporcionado es invalido"
+  },
+  "BAD_REQUEST_NO_MODIFICATIONS": {
+    "en": "there are no modifications to make",
+    "es": "No existen modificaciones para efectuar 😒"
+  },
+  "BAD_REQUEST_CURRENT_PASSWORD_DO_NOT_MATCH":{
+    "en": "current passwords do not match",
+    "es": "Las contraseñas actuales no coinciden"
+  }
+}

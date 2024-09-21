@@ -1,0 +1,17 @@
+/* .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    padding: 20px;
+  } */
+/*   
+  .header-collapsed .header-content {
+    margin-left: 400px;
+  } */
+  
+  .wrapper{
+    width: 100%;
+    will-change: auto;
+    transition: padding 0.15s;
+  }
