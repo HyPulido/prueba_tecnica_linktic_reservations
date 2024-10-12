@@ -8,5 +8,5 @@ Dentro del README del backend se encuentranlos detalles paraeldepliegue del proy
 
 La collección de postman se puede importar la cual ya cuenta con las variables de entorno necesarias
 
-Tener en cuenta
-Se tienen una carpeta llamada Crypt, estas dos apis sirven para encriptar y desencriptar datos en caso que se necesite crear un usuario directamente por llamado de Api desde postman
+#### Tener en cuenta
+Se tiene una carpeta llamada Crypt, estas dos apis sirven para encriptar y desencriptar datos en caso que se necesite crear un usuario directamente por llamado de Api desde postman
