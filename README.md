@@ -7,3 +7,6 @@ En cada una de las carpetas se encuentran los proycetos para backend, frontend, 
 Dentro del README del backend se encuentranlos detalles paraeldepliegue del proyecto y de igual manera dentro del README del frontend
 
 La collección de postman se puede importar la cual ya cuenta con las variables de entorno necesarias
+
+Tener en cuenta
+Se tienen una carpeta llamada Crypt, estas dos apis sirven para encriptar y desencriptar datos en caso que se necesite crear un usuario directamente por llamado de Api desde postman

@@ -11,15 +11,15 @@ import { Login } from './views/pages/login/Login';
 import { SignUp } from './views/pages/signup/SignUp';
 import { useIdleTimer } from 'react-idle-timer'
 import { env } from './Utils/Environment';
-import * as MarketsmsService from "./services/MarketsmsService";
+import * as MarketsmsService from "./services/LinkticService";
 import { getBaseToken, getToken, userLogout, saveBaseToken, saveToken, verifyRefreshToken } from './Utils/Auth';
 import { getDeviceData } from './Utils/BaseApp';
 import { ToastContainer } from 'react-toastify';
 import LoadingContainer from './components/loading/LoadingContainer';
 import ConfirmContainer from './components/confirm/ConfirmContainer';
 
-import { Products } from './views/products/Products';
-import { Orders } from './views/orders/Orders';
+import { Reservations } from './views/reservations/Reservations';
+// import { Orders } from './views/orders/Orders';
 
 
 function App() {
@@ -108,8 +108,8 @@ function App() {
       <ToastContainer />
       <Routes>
         <Route path='/' element={<Navigate to="/login" />} />
-        <Route path='/products' element={<SideBar><Products /></SideBar>} />
-        <Route path='/orders' element={<SideBar><Orders /></SideBar>} />
+        <Route path='/reservations' element={<SideBar><Reservations /></SideBar>} />
+        {/* <Route path='/orders' element={<SideBar><Orders /></SideBar>} /> */}
         <Route path='/login' element={<Login />} />
         <Route path='/signup' element={<SignUp />} />
         <Route path='/*' element={<SideBar><Page404 /></SideBar>} />

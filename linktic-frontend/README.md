@@ -1,7 +1,7 @@
 # LinkTick - Technical Test Documentation
 
 ## Project Overview
-This project is built with React (version 18.3.1) and was generated using Create React App. It serves as part of a technical test.
+Este proyecto fue construido con React (version 18.3.1).
 
 ## Prerequisites
 - **Node.js** version: v20.9.0

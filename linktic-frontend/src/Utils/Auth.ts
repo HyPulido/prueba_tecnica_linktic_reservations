@@ -1,7 +1,7 @@
 import { jwtDecode } from "jwt-decode";
 import { UsersItems } from "../models/Users";
 import { env } from "./Environment";
-import * as MarketsmsService from "../services/MarketsmsService";
+import * as MarketsmsService from "../services/LinkticService";
 import { showToastTC } from "./BaseApp";
 
 export function userLogout() {

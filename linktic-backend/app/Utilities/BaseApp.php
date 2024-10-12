@@ -344,14 +344,10 @@ trait BaseApp
     }
 
 
-
-
-
-
-    public function generateReferenceId()
-    {
-        return date('Ymdhis') . $this->uniqidCustom(4);
-    }
+    // public function generateReferenceId()
+    // {
+    //     return date('Ymdhis') . $this->uniqidCustom(4);
+    // }
 
 
     public function generateHash($text)

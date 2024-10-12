@@ -2,7 +2,7 @@ import { aesDecrypt, aesEncrypt } from "crypt-hpulido";
 import { env } from "./Environment";
 import { Theme, ToastPosition, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import * as MarketsmsService from "../services/MarketsmsService";
+import * as LinkticService from "../services/LinkticService";
 
 import { UsersItems } from "../models/Users";
 
@@ -104,7 +104,7 @@ function getTheme(): Theme {
 
 export async function getCurrentUser(): Promise<UsersItems | null> {
 
-  const response = await MarketsmsService.getCurrentUser();
+  const response = await LinkticService.getCurrentUser();
   console.log(response)
   if (response !== null) {
     if (response.status === 200) {
@@ -123,32 +123,7 @@ export async function getCurrentUser(): Promise<UsersItems | null> {
 }
 
 
-
-// export async function csvToJson(csv: string) {
-//   const lines = csv.split("\n");
-//   const headers = lines[0].split(",").map((header) => header.trim()); // Eliminar espacios adicionales
-
-//   const jsonData: any[] = [];
-
-//   for (let i = 1; i < lines.length; i++) {
-//     const currentLine = lines[i].split(",");
-
-//     if (currentLine.length === headers.length) {
-//       const lineObject: any = {};
-
-//       for (let j = 0; j < headers.length; j++) {
-//         lineObject[headers[j]] = currentLine[j].trim(); // Eliminar espacios adicionales
-//       }
-
-//       jsonData.push(lineObject);
-//     }
-//   }
-
-//   return jsonData;
-// }
-
-
-export function getBadgeProductStatus(status: number) {
+export function getBadgeReservationsStatus(status: number) {
   switch (status) {
     case 1:
       return "success";
@@ -160,20 +135,20 @@ export function getBadgeProductStatus(status: number) {
 };
 
 
-export function getBadgeOrderStatus(status: number) {
-  switch (status) {
-    case 1:
-      return "info";
-    case 2:
-      return "primary";
-    case 3:
-      return "warning";
-    case 4:
-      return "success";
-    default:
-      return "dark";
-  }
-};
+// export function getBadgeOrderStatus(status: number) {
+//   switch (status) {
+//     case 1:
+//       return "info";
+//     case 2:
+//       return "primary";
+//     case 3:
+//       return "warning";
+//     case 4:
+//       return "success";
+//     default:
+//       return "dark";
+//   }
+// };
 
 
 export async function getDeviceId() {

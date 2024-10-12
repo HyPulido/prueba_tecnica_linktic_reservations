@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../../scss/_custom.scss";
 import { Link, useNavigate } from "react-router-dom";
 import { customMessage, encrypt, showToastTR } from "../../../Utils/BaseApp";
-import * as MarketsmsService from "../../../services/MarketsmsService";
+import * as MarketsmsService from "../../../services/LinkticService";
 import { SingUpModel } from "../../../models/SignUp";
 import "react-toastify/dist/ReactToastify.css";
 import { CButton, CCol, CContainer, CForm, CFormInput, CImage, CRow } from "@coreui/react-pro";

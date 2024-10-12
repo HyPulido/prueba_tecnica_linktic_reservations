@@ -14,7 +14,7 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection(getenv('DB_DATABASE'))->create('products_units_measurement', function (Blueprint $table) {
+        Schema::connection(getenv('DB_DATABASE'))->create('reservations_statuses', function (Blueprint $table) {
             $table->id();
             $table->string('name', 50);
             $table->string('description', 50);
@@ -29,6 +29,6 @@ return new class extends Migration
     public function down()
     {
         //
-        Schema::connection(getenv('DB_DATABASE'))->dropIfExists('products_units_measurement');
+        Schema::connection(getenv('DB_DATABASE'))->dropIfExists('reservations_statuses');
     }
 };

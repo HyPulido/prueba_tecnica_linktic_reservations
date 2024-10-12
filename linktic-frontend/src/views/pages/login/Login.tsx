@@ -8,7 +8,7 @@ import {
   showToastTC,
   showToastTR,
 } from "../../../Utils/BaseApp";
-import * as MarketsmsService from "../../../services/MarketsmsService";
+import * as MarketsmsService from "../../../services/LinkticService";
 
 import "react-toastify/dist/ReactToastify.css";
 import { CButton, CCol, CContainer, CForm, CFormCheck, CFormInput, CImage, CRow } from "@coreui/react-pro";
@@ -30,7 +30,7 @@ export const Login: React.FC<LoginProps> = ({ }: LoginProps) => {
 
   useEffect(() => {
     if (isUserLogin()) {
-      navigate("/products");
+      navigate("/reservations");
     }
   }, []);
 
@@ -55,7 +55,7 @@ export const Login: React.FC<LoginProps> = ({ }: LoginProps) => {
         // });
 
         const redirect_path = sessionStorage.getItem('redirect_path');
-        const path = redirect_path || '/products'; // Si no hay una URL de redirección, redirigir a la página de inicio
+        const path = redirect_path || '/reservations'; // Si no hay una URL de redirección, redirigir a la página de inicio
         sessionStorage.removeItem('redirect_path');
         navigate(path);
       }

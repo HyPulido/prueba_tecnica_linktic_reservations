@@ -14,10 +14,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection(getenv('DB_DATABASE'))->create('products_statuses', function (Blueprint $table) {
+        Schema::connection(getenv('DB_DATABASE'))->create('hotels', function (Blueprint $table) {
             $table->id();
             $table->string('name', 50);
-            $table->string('description', 50);
+            $table->string('address', 50);
+            $table->string('phone', 50);
+            $table->integer('stars')->unsigned();
         });
     }
 
@@ -29,6 +31,6 @@ return new class extends Migration
     public function down()
     {
         //
-        Schema::connection(getenv('DB_DATABASE'))->dropIfExists('products_statuses');
+        Schema::connection(getenv('DB_DATABASE'))->dropIfExists('hotels');
     }
 };

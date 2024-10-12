@@ -48,7 +48,7 @@ Asegúrate de tener instalados los siguientes requisitos antes de comenzar:
      DB_CONNECTION=mysql
      DB_HOST=127.0.0.1
      DB_PORT=3306
-     DB_DATABASE=linktic_ecommerce
+     DB_DATABASE=linktic_reservations
      DB_USERNAME=root
      DB_PASSWORD=
      ```

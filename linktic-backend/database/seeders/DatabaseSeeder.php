@@ -17,11 +17,8 @@ class DatabaseSeeder extends Seeder
             ErrorCodesSeeder::class,
             StatusSeeder::class,
             RolesSeeder::class,
-            ProductsCategoriesSeeder::class,
-            ProductsStatusesSeeder::class,
-            OrdersStatusesSeeder::class,
-            ProductsUnitsMeasurementSeeder::class,
-            DeliveriesTypesSeeder::class
+            ReservationsStatusesSeeder::class,
+            RoomTypesSeeder::class
         ]);
     }
 }

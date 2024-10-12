@@ -1,7 +1,9 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -14,10 +16,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::connection(getenv('DB_DATABASE'))->create('deliveries_types', function (Blueprint $table) {
+        Schema::connection(getenv('DB_DATABASE'))->create('room_types', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 50);
-            $table->string('description', 50);
+            $table->string('name', 25);
+            $table->string('description', 64);
         });
     }
 
@@ -29,6 +31,6 @@ return new class extends Migration
     public function down()
     {
         //
-        Schema::connection(getenv('DB_DATABASE'))->dropIfExists('deliveries_types');
+        Schema::connection(getenv('DB_DATABASE'))->dropIfExists('room_types');
     }
 };
